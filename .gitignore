@@ -1,0 +1,7 @@
+__pycache__
+data/
+data_loaders/
+models/
+models_saved/
+outputs/
+pretrained_models/
