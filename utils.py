@@ -34,7 +34,7 @@ def save_model(state, is_best, is_last, filename):
 
 def Config(filename):
     with open(filename, 'r') as f:
-        parser = edict(yaml.load(f))
+        parser = edict(yaml.load(f, Loader=yaml.FullLoader))
     for x in parser:
         print('{}: {}'.format(x, parser[x]))
     return parser
